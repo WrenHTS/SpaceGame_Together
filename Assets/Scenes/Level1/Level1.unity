@@ -9374,6 +9374,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UserInterface
       objectReference: {fileID: 0}
+    - target: {fileID: 11439034, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445676, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
+      propertyPath: gameType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382300, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
+      propertyPath: m_TargetDisplay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 22414540, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -15810,7 +15822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Playground.Conditions.Actions.DialogueBalloonAction
   textToDisplay: Press [space] to move forward
-  backgroundColor: {r: 0.44313726, g: 0.5176471, b: 0.57254905, a: 1}
+  backgroundColor: {r: 0.13385539, g: 0.9056604, b: 0.8227993, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}
   targetObject: {fileID: 2007728241}
   disappearMode: 1
