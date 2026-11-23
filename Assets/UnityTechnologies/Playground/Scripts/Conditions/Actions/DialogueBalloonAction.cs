@@ -19,6 +19,7 @@ namespace Playground.Conditions.Actions
         public Color backgroundColor = new Color32(113, 132, 146, 255);
         public Color textColor = Color.white;
 
+
         [Header("Options")] public Transform targetObject;
 
         public DisappearMode disappearMode = DisappearMode.ButtonPress;
