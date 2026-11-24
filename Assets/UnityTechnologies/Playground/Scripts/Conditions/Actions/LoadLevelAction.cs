@@ -1,4 +1,5 @@
-﻿using Playground.BaseClasses;
+﻿using System.Collections;
+using Playground.BaseClasses;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,14 +15,20 @@ namespace Playground.Conditions.Actions
         //Loads a new Unity scene, or reload the current one (it means all objects are reset)
         public override bool ExecuteAction(GameObject dataObject)
         {
+            StartCoroutine(LoadLevelAfterDelay());
+            return true;
+        }
+
+        private IEnumerator LoadLevelAfterDelay()
+        {
+            yield return new WaitForSeconds(0.5f);
+
             if (levelName == SAME_SCENE)
                 //just restart the level
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
             else
                 //load another scene
                 SceneManager.LoadScene(levelName, LoadSceneMode.Single);
-
-            return true;
         }
     }
 }
